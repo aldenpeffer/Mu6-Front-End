@@ -1,4 +1,4 @@
 <p class="listHeader">{{ listHeader }}</p>
-<p *ngFor="let item of listItems">
+<p class="listItemWrapper" *ngFor="let item of listItems">
   <a [ngClass]="item.id==selectedId ? 'selectedItem' : 'listItem'" (click)="selectListItem(item.id)" href="#">{{item.display}}</a>
 </p>

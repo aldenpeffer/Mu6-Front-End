@@ -1,11 +1,16 @@
 .listHeader{
     color: #bbbbbb;
-    margin: 0 0 3px;
+    padding-left: 3px;
+    padding-top: 10px;
 }
 
 a {
     color: #ffffff;
     text-decoration: none;
+}
+
+.listItemWrapper{
+    padding-top: 6px;
 }
 
 .listItem{

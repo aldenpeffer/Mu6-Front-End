@@ -7,6 +7,9 @@ import { MenuSectionComponent } from './menu/menu-section/menu-section.component
 import { FormsModule } from '@angular/forms';
 import { SocialComponent } from './social/social.component';
 import { UserInfoComponent } from './social/user-info/user-info.component';
+import { ContentComponent } from './content/content.component';
+import { SongViewComponent } from './content/song-view/song-view.component';
+import { AlbumViewComponent } from './content/album-view/album-view.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { UserInfoComponent } from './social/user-info/user-info.component';
     MenuComponent,
     MenuSectionComponent,
     SocialComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    ContentComponent,
+    SongViewComponent,
+    AlbumViewComponent
   ],
   imports: [
     BrowserModule,
