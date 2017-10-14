@@ -1,0 +1,10 @@
+div {
+    background-color: black;
+    position: fixed;
+    height: calc(100% - 100px);
+    width: 150px;
+    padding-left: 20px;
+    padding-top: 10px;
+    z-index: 1;
+    overflow-x: hidden;
+}
