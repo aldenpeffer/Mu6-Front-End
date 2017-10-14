@@ -1,4 +1,4 @@
 <p class="listHeader">{{ listHeader }}</p>
-<p *ngFor="let item of listItems; let i = index">
-  <a [ngClass]="i==selected ? 'selectedItem listItem' : 'listItem'" (click)="selectListItem(i)" href="#">{{item[0]}}</a>
+<p *ngFor="let item of listItems">
+  <a [ngClass]="item.id==selectedId ? 'selectedItem' : 'listItem'" (click)="selectListItem(item.id)" href="#">{{item.display}}</a>
 </p>

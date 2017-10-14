@@ -6,12 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-section.component.css']
 })
 export class MenuSectionComponent implements OnInit {
-  listHeader = 'test';
-  listItems = [["item1", "link1"], ["item2", "link2"], ["item3", "link3"], ["item4", "link4"]];
-  selected = 1;
+  listHeader = 'Library';
+  listItems = [{display:"Playlists", id:"PLAYLIST_PAGE"},
+    {display:"Artists", id:"ARTIST_PAGE"}, 
+    {display:"Songs", id:"SONGS_PAGE"}, 
+    {display:"Albums", id:"ALBUMS_PAGE"}];
+  selectedId = 'SONGS_PAGE';
 
-  selectListItem(index){
-    console.log(index);
+  selectListItem(id){
+    this.selectedId = id;
   }
 
   constructor() { }

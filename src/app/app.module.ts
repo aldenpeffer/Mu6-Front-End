@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { MenuSectionComponent } from './menu/menu-section/menu-section.component';
 import { FormsModule } from '@angular/forms';
+import { SocialComponent } from './social/social.component';
+import { UserInfoComponent } from './social/user-info/user-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    MenuSectionComponent
+    MenuSectionComponent,
+    SocialComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
