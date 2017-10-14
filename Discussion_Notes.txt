@@ -1,0 +1,8 @@
+308 Front-End Notes:
+
+Floating the menu and social side bars with correct heights
+	- Bootstrap aside
+	- CSS Grid
+	- Flexbox
+~For now, static height value
+
