@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 
-import * as actionTypes from '../view/view.actions';
+import * as ViewActions from '../view/view.actions';
+import { View } from '../view/view.model';
 import * as viewIds from '../view/view.ids';
 
 interface AppState{
-  view: Object
+  view: View
 }
 
 @Component({
@@ -15,7 +16,7 @@ interface AppState{
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
-  view: Observable<Object>
+  view: Observable<View>
   viewIds = viewIds
 
   constructor(private store: Store<AppState>){

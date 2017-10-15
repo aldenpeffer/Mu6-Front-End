@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
+
 import * as viewIds from '../../view/view.ids';
-import * as actionTypes from '../../view/view.actions';
+import * as ViewActions from '../../view/view.actions';
+import { View } from '../../view/view.model';
 
 interface AppState{
-  view: Object
+  view: View
 }
 
 //Helper function to create action payload
@@ -24,19 +26,17 @@ export class MenuSectionComponent implements OnInit {
     {display:"Artists", id: viewIds.ARTIST}, 
     {display:"Songs", id: viewIds.SONG}, 
     {display:"Albums", id: viewIds.ALBUM}];
-  selectedId = viewIds.SONG;
 
-  selectListItem(id){
-    this.store.dispatch({ type: actionTypes.UPDATE_VIEW, { viewId: id, } });
-    this.selectedId = id;
-  }
-
-  view: Observable<Object>
+  view: Observable<View>
   viewIds = viewIds
+
+  updateView(id){
+    this.store.dispatch(new ViewActions.Update(createPayload(id, "Test Data Here")));
+  }
 
   constructor(private store: Store<AppState>){
     this.view = store.select('view');
-	}
+  }
 
   ngOnInit() {
   }
