@@ -1,2 +1,4 @@
-<app-song-view *ngIf="selected=='SONGS_PAGE'"></app-song-view>
-<app-album-view *ngIf="selected=='ALBUM_PAGE'"></app-album-view>
+<div *ngIf="view | async as v">
+    <app-song-view *ngIf="v.viewId == viewIds.SONG"></app-song-view>
+    <app-album-view *ngIf="v.viewId == viewIds.ALBUM"></app-album-view>
+</div>

@@ -1,4 +1,6 @@
-<p class="listHeader">{{ listHeader }}</p>
-<p class="listItemWrapper" *ngFor="let item of listItems">
-  <a [ngClass]="item.id==selectedId ? 'selectedItem' : 'listItem'" (click)="selectListItem(item.id)" href="#">{{item.display}}</a>
-</p>
+<div *ngIf="view | async as v">
+  <p class="listHeader">{{ listHeader }}</p>
+  <p class="listItemWrapper" *ngFor="let item of listItems">
+    <a [ngClass]="item.id==v.viewId ? 'selectedItem' : 'listItem'" (click)="selectListItem(item.id)" href="#">{{item.display}}</a>
+  </p>
+</div>

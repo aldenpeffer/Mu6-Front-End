@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { StoreModule } from '@ngrx/store';
 
+import { viewReducer } from './view/view.reducer';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { MenuSectionComponent } from './menu/menu-section/menu-section.component';
@@ -24,7 +26,8 @@ import { AlbumViewComponent } from './content/album-view/album-view.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    StoreModule.provideStore({ view: viewReducer })
   ],
   providers: [],
   bootstrap: [AppComponent]
