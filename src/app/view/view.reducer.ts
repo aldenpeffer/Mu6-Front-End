@@ -1,7 +1,7 @@
 import { ActionReducer } from '@ngrx/store';
 import * as viewIds from './view.ids';
 import { View } from './view.model';
-import * as ActionTypes from './view.actions';
+import * as ActionTypes from './view.actions.types';
 
 const defaultState: View  = {
 	viewId: viewIds.SONG,

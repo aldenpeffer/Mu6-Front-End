@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 
-import * as ViewActions from '../view/view.actions';
 import { View } from '../view/view.model';
 import * as viewIds from '../view/view.ids';
 

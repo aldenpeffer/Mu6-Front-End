@@ -3,7 +3,7 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 
 import * as viewIds from '../../view/view.ids';
-import * as ActionTypes from '../../view/view.actions';
+import * as ActionGenerator from '../../view/view.actions';
 import { View } from '../../view/view.model';
 
 interface AppState{
@@ -31,7 +31,7 @@ export class MenuSectionComponent implements OnInit {
   viewIds = viewIds
 
   updateView(id){
-    this.store.dispatch(ActionTypes.Update, {viewId: id, viewData: })
+    this.store.dispatch(ActionGenerator.genUpdate(id, {}))
   }
 
   constructor(private store: Store<AppState>){

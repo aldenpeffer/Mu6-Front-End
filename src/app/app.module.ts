@@ -14,6 +14,7 @@ import { UserInfoComponent } from './social/user-info/user-info.component';
 import { ContentComponent } from './content/content.component';
 import { SongViewComponent } from './content/song-view/song-view.component';
 import { AlbumViewComponent } from './content/album-view/album-view.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AlbumViewComponent } from './content/album-view/album-view.component';
     UserInfoComponent,
     ContentComponent,
     SongViewComponent,
-    AlbumViewComponent
+    AlbumViewComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
