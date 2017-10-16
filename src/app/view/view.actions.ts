@@ -1,16 +1,19 @@
 import { Action } from '@ngrx/store';
+import { View } from './view.model';
 
 export const UPDATE = '[View] Update';
 export const DO_NOTHING = '[View] DummyAction';
 
-export class Update implements Action{
-    readonly type = UPDATE;
-
-    constructor(public payload: Object){}
+function createAction(type, payload){
+    return { type, payload }
 }
 
-export class DoNothing implements Action{
-    readonly type = DO_NOTHING;
+export function genUpdate(viewId, viewData){
+    return { type }
+}
+
+export function genDoNothing(){
+
 }
 
 export type All = Update | DoNothing;

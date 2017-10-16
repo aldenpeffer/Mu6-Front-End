@@ -1,9 +1,7 @@
-import { ActionReducer, Action } from '@ngrx/store';
+import { ActionReducer } from '@ngrx/store';
 import * as viewIds from './view.ids';
 import { View } from './view.model';
-import * as ViewActions from './view.actions';
-
-export type Action = ViewActions.All; 
+import * as ActionTypes from './view.actions';
 
 const defaultState: View  = {
 	viewId: viewIds.SONG,
@@ -14,13 +12,13 @@ const newState = (state, newData) => {
 	return Object.assign({}, state, newData)
 }
 
-export function viewReducer(state: View = defaultState, action: Action) {
+export function viewReducer(state: View = defaultState, action) {
 	const data = action.payload;
 	switch (action.type) {
-		case ViewActions.UPDATE:
+		case ActionTypes.UPDATE:
 			return newState(state, { viewId: data.viewId, viewData: data.viewData })
 
-		case ViewActions.DO_NOTHING:
+		case ActionTypes.DO_NOTHING:
 			console.log("Do nothing!")
 			return state;
 

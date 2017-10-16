@@ -3,7 +3,7 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 
 import * as viewIds from '../../view/view.ids';
-import * as ViewActions from '../../view/view.actions';
+import * as ActionTypes from '../../view/view.actions';
 import { View } from '../../view/view.model';
 
 interface AppState{
@@ -11,8 +11,8 @@ interface AppState{
 }
 
 //Helper function to create action payload
-const createPayload = (viewId, viewData) => {
-    return {viewId, viewData}
+const createAction = (type, payload) => {
+    return {type, payload}
 }
 
 @Component({
@@ -31,7 +31,7 @@ export class MenuSectionComponent implements OnInit {
   viewIds = viewIds
 
   updateView(id){
-    this.store.dispatch(new ViewActions.Update(createPayload(id, "Test Data Here")));
+    this.store.dispatch(ActionTypes.Update, {viewId: id, viewData: })
   }
 
   constructor(private store: Store<AppState>){
