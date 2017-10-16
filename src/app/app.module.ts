@@ -15,6 +15,7 @@ import { ContentComponent } from './content/content.component';
 import { SongViewComponent } from './content/song-view/song-view.component';
 import { AlbumViewComponent } from './content/album-view/album-view.component';
 import { FooterComponent } from './footer/footer.component';
+import { ArtistViewComponent } from './content/artist-view/artist-view.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FooterComponent } from './footer/footer.component';
     ContentComponent,
     SongViewComponent,
     AlbumViewComponent,
-    FooterComponent
+    FooterComponent,
+    ArtistViewComponent
   ],
   imports: [
     BrowserModule,
