@@ -1,8 +1,6 @@
 308 Front-End Notes:
 
-Floating the menu and social side bars with correct heights
-	- Bootstrap aside
-	- CSS Grid
-	- Flexbox
-~For now, static height value
+Resizing window such that a horizontal scrollbar appears causes incorrect alignment of divs (footer with main-divs)
 
+The state model is being ignored for now (library is not included in the View model, for example). This works but probably shouldn't.
+    Once we've fleshed out what data should be maintained in the state we can re-implement the View model.

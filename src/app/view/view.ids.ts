@@ -8,3 +8,10 @@ export const ARTIST = 'ARTIST';
 export const BROWSE = 'BROWSE';
 export const PLAYLISTS = 'PLAYLIST';
 export const DEFAULT = 'DEFAULT';
+
+//Object containing all library ids
+export const LIBRARY = {
+    SONG_LIB,
+    ALBUM_LIB,
+    ARTIST_LIB
+}

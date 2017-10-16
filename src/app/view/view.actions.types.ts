@@ -1,2 +1,5 @@
-export const UPDATE = '[View] Update';
-export const DO_NOTHING = '[View] DummyAction';
+export const UPDATE = '[View] Update'
+export const DO_NOTHING = '[View] DummyAction'
+export const LOAD_LIBRARY = '[View] LoadLibrary'
+export const LOAD_ALBUM = '[View] LoadAlbum'
+export const LOAD_ARTIST = '[View] LoadArtist'

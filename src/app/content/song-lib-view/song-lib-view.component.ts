@@ -4,17 +4,17 @@ import { Observable } from 'rxjs/Observable';
 
 import { View } from '../../view/view.model';
 import * as viewIds from '../../view/view.ids';
+import * as ActionGenerator from '../../view/view.actions';
 
 interface AppState{
   view: View
 }
-
 @Component({
-  selector: 'app-artist-view',
-  templateUrl: './artist-view.component.html',
-  styleUrls: ['./artist-view.component.css']
+  selector: 'app-song-lib-view',
+  templateUrl: './song-lib-view.component.html',
+  styleUrls: ['./song-lib-view.component.css']
 })
-export class ArtistViewComponent implements OnInit {
+export class SongLibViewComponent implements OnInit {
   view: Observable<View>
   viewIds = viewIds
 
@@ -23,5 +23,13 @@ export class ArtistViewComponent implements OnInit {
 	}
 
   ngOnInit() {
+  }
+
+  loadAlbum(albumId){
+    this.store.dispatch(ActionGenerator.genLoadAlbum(albumId));
+  }
+
+  loadArtist(artistId){
+    this.store.dispatch(ActionGenerator.genLoadArtist(artistId));
   }
 }

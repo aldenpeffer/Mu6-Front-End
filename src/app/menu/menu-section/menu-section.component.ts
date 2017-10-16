@@ -23,15 +23,19 @@ const createAction = (type, payload) => {
 export class MenuSectionComponent implements OnInit {
   listHeader = 'Library';
   listItems = [{display:"Playlists", id: viewIds.PLAYLISTS},
-    {display:"Artists", id: viewIds.ARTIST}, 
-    {display:"Songs", id: viewIds.SONG}, 
-    {display:"Albums", id: viewIds.ALBUM}];
+    {display:"Artists", id: viewIds.ARTIST_LIB}, 
+    {display:"Songs", id: viewIds.SONG_LIB}, 
+    {display:"Albums", id: viewIds.ALBUM_LIB}];
 
   view: Observable<View>
   viewIds = viewIds
 
   updateView(id){
     this.store.dispatch(ActionGenerator.genUpdate(id, {}))
+  }
+
+  loadLibrary(id){
+    this.store.dispatch(ActionGenerator.genLoadLibrary(id));
   }
 
   constructor(private store: Store<AppState>){

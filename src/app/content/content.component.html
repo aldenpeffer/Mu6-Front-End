@@ -1,7 +1,9 @@
 <div class="content">
     <div *ngIf="view | async as v">
-        <app-song-view *ngIf="v.viewId == viewIds.SONG"></app-song-view>
-        <app-album-view *ngIf="v.viewId == viewIds.ALBUM"></app-album-view>
+        <app-song-lib-view *ngIf="v.viewId == viewIds.SONG_LIB"></app-song-lib-view>
+        <app-album-lib-view *ngIf="v.viewId == viewIds.ALBUM_LIB"></app-album-lib-view>
+        <app-artist-lib-view *ngIf="v.viewId == viewIds.ARTIST_LIB"></app-artist-lib-view>
+        <app-album-view *ngIf="v.viewId == viewIds.ALBUM"> </app-album-view>
         <app-artist-view *ngIf="v.viewId == viewIds.ARTIST"></app-artist-view>
     </div>
 </div>

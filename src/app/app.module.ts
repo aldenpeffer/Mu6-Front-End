@@ -12,10 +12,12 @@ import { FormsModule } from '@angular/forms';
 import { SocialComponent } from './social/social.component';
 import { UserInfoComponent } from './social/user-info/user-info.component';
 import { ContentComponent } from './content/content.component';
-import { SongViewComponent } from './content/song-view/song-view.component';
-import { AlbumViewComponent } from './content/album-view/album-view.component';
+import { SongLibViewComponent } from './content/song-lib-view/song-lib-view.component';
+import { AlbumLibViewComponent } from './content/album-lib-view/album-lib-view.component';
 import { FooterComponent } from './footer/footer.component';
+import { ArtistLibViewComponent } from './content/artist-lib-view/artist-lib-view.component';
 import { ArtistViewComponent } from './content/artist-view/artist-view.component';
+import { AlbumViewComponent } from './content/album-view/album-view.component';
 
 @NgModule({
   declarations: [
@@ -25,10 +27,12 @@ import { ArtistViewComponent } from './content/artist-view/artist-view.component
     SocialComponent,
     UserInfoComponent,
     ContentComponent,
-    SongViewComponent,
-    AlbumViewComponent,
+    SongLibViewComponent,
+    AlbumLibViewComponent,
     FooterComponent,
-    ArtistViewComponent
+    ArtistLibViewComponent,
+    ArtistViewComponent,
+    AlbumViewComponent
   ],
   imports: [
     BrowserModule,

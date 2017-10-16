@@ -1,3 +1,5 @@
-<p>Hello world, this is the album view</p>
-<button>This probably is a button</button>
-<input label="this is a label i think" type="text">
+<div *ngIf="view | async as v">
+  <p style="font-size: 80px; color:black;text-align:center;">
+      ALBUM VIEW<br>DISPLAY DATA FOR<br>ALBUM ID: {{v.albumId}}<br> HERE
+  </p>
+</div>
