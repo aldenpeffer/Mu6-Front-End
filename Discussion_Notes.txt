@@ -32,5 +32,10 @@ Style the Views Correctly, Priority:
 	3. Browse
 Style side bars (menu and social)
 Style footer
+Code Housekeeping:
+	Create typing for Song, Artist, Album, Library objects to use instead of current untyped js objects
+	Reduce redundanted code in component typescript files (export AppState from some other file,
+		maybe extend the core state interactions from another class)
+	Reduce redundant CSS (move shared CSS to global stylesheet)
 ???
 PROFIT
