@@ -17,3 +17,20 @@ Library Model
 	Approach 2. Have a boolean 'hasChanged' property on the library object. On actions that modify the library,
 		set the value of hasChanged to true. When accessing library, if hasChanged is true then request a 
 		fresh copy of the library.  
+
+
+--------------------
+    To Do List
+--------------------
+Define menu options
+Define possible views (menu options + non-menu option views)
+Implement footer play-bar (album info on left, play/pause/skip buttons centered, runtime info, etc.)
+Implement social bar on right (just connect to the state and have some dummy data)
+Style the Views Correctly, Priority:
+	1. Library - Song or Album/Artist(similar styling for these two)
+	2. Playlist
+	3. Browse
+Style side bars (menu and social)
+Style footer
+???
+PROFIT

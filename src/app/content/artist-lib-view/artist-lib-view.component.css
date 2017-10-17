@@ -1,8 +1,37 @@
-p, b {
-    color: black;
+*{
+    color:black;
 }
 
-.smiley{
-    font-size: 54px;
+.artistText{
+    margin: 0 auto;
+    text-align: center;
+    text-overflow: ellipsis;
+    /* The 3 attributes below are required for ellipsis to function */
+    white-space: nowrap;
+    overflow: hidden;
+    width: 80px;    
+}
+
+.artistSquare{
+    background: gold;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    margin-bottom: 4px;
+    
+    line-height: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
     text-align: center;
 }
+
+.flex-wrapper{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;    
+}
+

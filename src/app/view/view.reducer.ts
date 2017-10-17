@@ -16,13 +16,13 @@ const fakeLibrary = {
 		album: {id: 19, name: "Test Album"}, runtime: "6:37"},
 
 		{ id: 4, name: "Prayer of the Refugee", artist: {id: 6, name: "Rise Against"},
-		album: {id: 3, name: "Generic Album Name LOOOOOONG"}, runtime: "5:43"},
+		album: {id: 3, name: "Generic Album Name"}, runtime: "5:43"},
 	],
 	albums: [
 		{id: 1, name: "Album A"},
 		{id: 7, name: "Cool Album Bro"},
 		{id: 19, name: "Test Album"},
-		{id: 3, name: "Generic Album Name LOOOOOONG"},
+		{id: 3, name: "Generic Album Name"},
 	],
 	artists: [
 		{id: 1, name: "Artist A"},
@@ -34,8 +34,9 @@ const fakeLibrary = {
 }
 
 const defaultState: View  = {
-	viewId: viewIds.ARTIST_LIB,
+	viewId: viewIds.SONG_LIB,
 	viewData: { test: "Hello world!" },
+	library: fakeLibrary
 }
 
 const newState = (state, newData) => {
