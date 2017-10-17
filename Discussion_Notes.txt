@@ -4,3 +4,6 @@ Resizing window such that a horizontal scrollbar appears causes incorrect alignm
 
 The state model is being ignored for now (library is not included in the View model, for example). This works but probably shouldn't.
     Once we've fleshed out what data should be maintained in the state we can re-implement the View model.
+
+Lots of re-used code (every component has the same AppState interface, listens to Observable stream of view).
+    Will need to do a bit of house-keeping to reduce the repeated code down the line.
