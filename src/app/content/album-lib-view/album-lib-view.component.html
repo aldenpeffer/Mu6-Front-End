@@ -1,3 +1,10 @@
-<p>Hello world, this is the album view</p>
-<button>This probably is a button</button>
-<input label="this is a label i think" type="text">
+<div *ngIf="view | async as v">
+    <div class="flex-wrapper">
+        <div *ngFor="let album of v.library.albums">
+            <div class="albumSquare">{{ album.id }}</div>
+            <div class="albumText">
+                <a href="#" (click)="loadAlbum(album.id)">{{ album.name }}</a>
+            </div>
+        </div>
+    </div>
+</div>

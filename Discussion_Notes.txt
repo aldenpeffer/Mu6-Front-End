@@ -7,3 +7,13 @@ The state model is being ignored for now (library is not included in the View mo
 
 Lots of re-used code (every component has the same AppState interface, listens to Observable stream of view).
     Will need to do a bit of house-keeping to reduce the repeated code down the line.
+
+Need to create models for Song, Album, Artist, library
+
+Library Model
+	library: { songs:[Song], albums:[Album], artists:[Artists] } 
+	Approach 1. On any actions that modify the library, if the ajax call succeeds update the library
+		on the front-end to reflect the modification (without requesting a fresh copy of library from back-end)
+	Approach 2. Have a boolean 'hasChanged' property on the library object. On actions that modify the library,
+		set the value of hasChanged to true. When accessing library, if hasChanged is true then request a 
+		fresh copy of the library.  
