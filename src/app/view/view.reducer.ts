@@ -36,7 +36,8 @@ const fakeLibrary = {
 const defaultState: View  = {
 	viewId: viewIds.SONG_LIB,
 	viewData: { test: "Hello world!" },
-	library: fakeLibrary
+	library: fakeLibrary,
+	currSongId: null
 }
 
 const newState = (state, newData) => {
@@ -68,6 +69,9 @@ export function viewReducer(state: View = defaultState, action) {
 			console.log("Do nothing!")
 			return state;
 
+		case ActionTypes.PLAY_SONG:
+			return newState(state, payload);
+			
 		default:
 			return state;
 	}

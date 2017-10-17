@@ -32,4 +32,8 @@ export class SongLibViewComponent implements OnInit {
   loadArtist(artistId){
     this.store.dispatch(ActionGenerator.genLoadArtist(artistId));
   }
+
+  setSong(songId) {
+    this.store.dispatch(ActionGenerator.playSong(songId));
+  }
 }

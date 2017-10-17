@@ -26,3 +26,7 @@ export function genLoadArtist(artistId){
     const viewId = viewIds.ARTIST;
     return createAction(ActionTypes.LOAD_ARTIST, {artistId, viewId});
 }
+
+export function playSong(songId) {
+    return createAction(ActionTypes.PLAY_SONG, {currSongId: songId});
+}
