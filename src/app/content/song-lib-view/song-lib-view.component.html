@@ -8,7 +8,10 @@
 
       <tr *ngFor="let song of v.library.songs">
         <td>
-          <button (click)="setSong(song.id)"><img src="../../assets/images/play.png" /></button>
+            <button (click)="setSong(song.id)">
+                <svg class="play-button" xmlns="http://www.w3.org/2000/svg"  version="1.1" 
+                  width="24" height="24" viewBox="0 0 24 24"><path d="M8,5.14V19.14L19,12.14L8,5.14Z" /></svg>
+            </button>            
         </td>
         <td>
           {{ song.name }}
