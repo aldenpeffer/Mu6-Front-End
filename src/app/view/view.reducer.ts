@@ -17,6 +17,54 @@ const fakeLibrary = {
 
 		{ id: 4, name: "Prayer of the Refugee", artist: {id: 6, name: "Rise Against"},
 		album: {id: 3, name: "Generic Album Name"}, runtime: "5:43"},
+
+		{ id: 1, name: "Song A", artist: {id: 1, name: "Artist A"},
+		album: {id: 1, name: "Album A"}, runtime: "1:49"},
+
+		{ id: 2, name: "Hips Don't Lie", artist: {id: 3, name: "Shakira"},
+		album: {id: 7, name: "Cool Album Bro"}, runtime: "2:21"},
+
+		{ id: 3, name: "Bleed It Out", artist: {id: 14, name: "Creepy Dudes"},
+		album: {id: 19, name: "Test Album"}, runtime: "6:37"},
+
+		{ id: 4, name: "Prayer of the Refugee", artist: {id: 6, name: "Rise Against"},
+		album: {id: 3, name: "Generic Album Name"}, runtime: "5:43"},
+
+		{ id: 1, name: "Song A", artist: {id: 1, name: "Artist A"},
+		album: {id: 1, name: "Album A"}, runtime: "1:49"},
+
+		{ id: 2, name: "Hips Don't Lie", artist: {id: 3, name: "Shakira"},
+		album: {id: 7, name: "Cool Album Bro"}, runtime: "2:21"},
+
+		{ id: 3, name: "Bleed It Out", artist: {id: 14, name: "Creepy Dudes"},
+		album: {id: 19, name: "Test Album"}, runtime: "6:37"},
+
+		{ id: 4, name: "Prayer of the Refugee", artist: {id: 6, name: "Rise Against"},
+		album: {id: 3, name: "Generic Album Name"}, runtime: "5:43"},
+
+		{ id: 1, name: "Song A", artist: {id: 1, name: "Artist A"},
+		album: {id: 1, name: "Album A"}, runtime: "1:49"},
+
+		{ id: 2, name: "Hips Don't Lie", artist: {id: 3, name: "Shakira"},
+		album: {id: 7, name: "Cool Album Bro"}, runtime: "2:21"},
+
+		{ id: 3, name: "Bleed It Out", artist: {id: 14, name: "Creepy Dudes"},
+		album: {id: 19, name: "Test Album"}, runtime: "6:37"},
+
+		{ id: 4, name: "Prayer of the Refugee", artist: {id: 6, name: "Rise Against"},
+		album: {id: 3, name: "Generic Album Name"}, runtime: "5:43"},
+
+		{ id: 1, name: "Song A", artist: {id: 1, name: "Artist A"},
+		album: {id: 1, name: "Album A"}, runtime: "1:49"},
+
+		{ id: 2, name: "Hips Don't Lie", artist: {id: 3, name: "Shakira"},
+		album: {id: 7, name: "Cool Album Bro"}, runtime: "2:21"},
+
+		{ id: 3, name: "Bleed It Out", artist: {id: 14, name: "Creepy Dudes"},
+		album: {id: 19, name: "Test Album"}, runtime: "6:37"},
+
+		{ id: 4, name: "Prayer of the Refugee", artist: {id: 6, name: "Rise Against"},
+		album: {id: 3, name: "Generic Album Name"}, runtime: "5:43"},
 	],
 	albums: [
 		{id: 1, name: "Album A"},

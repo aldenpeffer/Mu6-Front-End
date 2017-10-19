@@ -1,10 +1,12 @@
 <div *ngIf="view | async as v">
     <div class="flex-wrapper">
         <div *ngFor="let album of v.library.albums">
-            <div class="albumSquare">{{ album.id }}</div>
-            <div class="albumText">
-                <a href="#" (click)="loadAlbum(album.id)">{{ album.name }}</a>
-            </div>
+            <a href="#" (click)="loadAlbum(album.id)">
+                <div class="albumSquare">{{ album.id }}</div>
+            </a>
+            <a href="#" (click)="loadAlbum(album.id)">
+                <div class="albumText">{{ album.name }}</div>
+            </a>
         </div>
     </div>
 </div>
